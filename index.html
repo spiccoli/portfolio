@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Santiago Piccoli's Portfolio</title>
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Santiago Piccoli" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Santiago Piccoli</h1>
+
+          <p class="title">Software developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:piccolisantiagonicolas@gmail.com " class="contact-link">piccolisantiagonicolas@gmail.com</a>
+            </div>
+
+          </li>
+
+
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Buenos Aires, Argentina</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/piccolisantiago/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/spiccoli" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+      <!--
+        - #NAVBAR
+      -->
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+        </ul>
+      </nav>
+      <!--
+        - #ABOUT
+      -->
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Software Engineering student at Universidad del Salvador (USAL), currently in my second year, and proud to maintain an academic excellence scholarship. I am enthusiastic about expanding my skills and gaining hands-on experience through professional opportunities.
+          </p>
+
+          <p>
+            My approach is rooted in the belief that simplicity is the ultimate sophistication. I combine this principle with robust engineering practices (TDD, CI, Modularity) to build software that is both scalable and intuitive. 
+          <p>
+            By focusing on clean design and clear, maintainable code, I create solutions that deliver high performance without unnecessary complexity.          </p>
+          </p>
+          </section>
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Backend development</h4>
+
+                <p class="service-item-text">
+                  High-quality backend development of sites using either .NET or GO.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Software planning</h4>
+
+                <p class="service-item-text">
+                  Outlining and organizing all the essential elements needed to develop a software product successfully                </p>
+              </div>
+
+            </li>
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  Modern, responsive designs using frameworks like React, Angular, and Flutter.                </p>
+              </div>
+
+            </li>     
+          </ul>
+
+        </section>
+
+      </article>
+            <!--
+        - #PORTFOLIO
+      -->
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/willytonkas/x-clone">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-0.png" alt="X-Clone" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">X-Clone</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/spiccoli/cities-weather">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.png" alt="CitiesWeather" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">CitiesWeather</h3>
+
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/spiccoli/angular-auth-website">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="AngularAuthWebsite" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">AngularAuthWebsite</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/spiccoli/password-generator">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="Password Generator" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Password Generator</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/spiccoli/react-todolist">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.png" alt="React To-Do-List" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">React To-Do-List</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/spiccoli/js-calculator">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="JsCalculator" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">JsCalculator</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/spiccoli/e-commerceAPI">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-6.png" alt="GO | E-Commerce API" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">GO | E-Commerce API</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+        </section>
+
+      </article>
+      
+      <!--
+        - #RESUME
+      -->
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Universidad Del Salvador - Software engineering</h4>
+
+              <span>2024 — 2028</span>
+
+              <p class="timeline-text">
+                Relevant programs:
+                Data Structures and Algorithms, Mathematical Analysis, Calculus, Statistics, Information Systems,
+Programming, Computer Architecture, Programming Paradigms, Algebra, Programming language theory.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Developer - WitCode</h4>
+
+              <span>06/2024 — Present</span>
+
+              <p class="timeline-text">
+                Currently, I am part of the team in charge of a claims management system for both clients and suppliers. The project is based on technologies such as C#, ASP.NET, and MSSQL for data management. My responsibilities include implementing dynamic interfaces with Blazor and JavaScript, integrating APIs, and conducting tests to ensure the quality and performance of the system.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Italian cuisine - Cala Cuncheddi</h4>
+
+              <span>03/2023 — 10/2023</span>
+
+              <p class="timeline-text">
+                Working in Italian cuisine was a transformative experience, where each service posed a challenge that tested my adaptability, resilience, and precision. In a high-pressure environment, I learned to manage the stress of constant orders, the fast-paced rhythm, and the expectations of excellence.
+
+                This experience not only allowed me to develop culinary skills but also fostered a strong, solution-oriented mindset—essential qualities for any demanding work environment.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+          <h3 class="h3 skills-title">Certifications</h3>
+
+          <ul class="skills-list content-card">
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <div style="width: 10px; height: 10px; background-color: hsl(45, 54%, 58%); border-radius: 50%;"></div>
+
+                <p class="h5">Programming with Google Go - University of California, Irvine </p>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <div style="width: 10px; height: 10px; background-color: hsl(45, 54%, 58%); border-radius: 50%;"></div>
+
+                <p class="h5">Fundamentals of web programming - Digital House</p>
+              </div>
+          </li>
+          </ul>
+
+        </section>
+<br>
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Team Collaboration</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Spanish - English - Italian</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Continuous Learning</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
