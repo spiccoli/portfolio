@@ -5,6 +5,31 @@ function toggleActive(elem) {
   elem.classList.toggle("active");
 }
 
+// Function to show a toast notification
+function showToast(message) {
+  const toast = document.getElementById('toast');
+  toast.textContent = message;
+  toast.classList.add('show');
+
+  // Hide the toast after 2 seconds
+  setTimeout(() => {
+    toast.classList.remove('show');
+  }, 2000);
+}
+
+// Function to copy the email address to the clipboard
+function copyEmail() {
+  const email = "piccolisantiagonicolas@gmail.com";
+  navigator.clipboard.writeText(email)
+    .then(() => {
+      showToast("Copied to clipboard!");
+    })
+    .catch((err) => {
+      console.error("Failed to copy email:", err);
+      showToast("Failed to copy email.");
+    });
+}
+
 // === SIDEBAR TOGGLE ===
 const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");

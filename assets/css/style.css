@@ -960,6 +960,57 @@ main {
   gap: 30px; /* space between cards */
 }
 
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* space between email text and icon */
+}
+
+.copy-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--light-gray);
+  font-size: 1.1rem;  /* Adjust icon size */
+  display: inline-flex;
+  align-items: center;
+}
+
+.copy-btn:hover,
+.copy-btn:focus {
+  color: var(--orange-yellow-crayola); /* highlight on hover/focus */
+}
+
+/* Toast styling */
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff; 
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease, bottom 0.4s ease;
+  z-index: 1000;
+}
+
+.toast.show {
+  opacity: 1;
+  bottom: 20px;
+}
+
+/* Adjust for iPhone safe area */
+@supports(padding: max(0px)) {
+  .toast {
+    padding-bottom: calc(24px + env(safe-area-inset-bottom));
+  }
+}
+
 /* 2) Enforce a uniform aspect ratio on the project thumbnail */
 .project-img {
   position: relative;

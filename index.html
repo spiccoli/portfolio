@@ -64,17 +64,27 @@
         <ul class="contacts-list">
 
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="mail-outline"></ion-icon>
             </div>
-
+          
             <div class="contact-info">
               <p class="contact-title">Email</p>
-
-              <a href="mailto:piccolisantiagonicolas@gmail.com " class="contact-link">piccolisantiagonicolas@gmail.com</a>
+          
+              <!-- Wrap the link and copy button in a small container -->
+              <div class="contact-row">
+                <a href="mailto:piccolisantiagonicolas@gmail.com" 
+                   class="contact-link" 
+                   id="emailLink">
+                  piccolisantiagonicolas@gmail.com
+                </a>
+          
+                <button class="copy-btn" onclick="copyEmail()" aria-label="Copy email">
+                  <div id="toast" class="toast"></div>
+                  <ion-icon name="copy-outline"></ion-icon>
+                </button>
+              </div>
             </div>
-
           </li>
 
 
